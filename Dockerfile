@@ -17,5 +17,8 @@ RUN conda install --quiet --yes \
     && conda clean -tipsy && \
     fix-permissions $CONDA_DIR
 
+# kataokatest
+RUN echo "kataoka_test!!!"
+
 # Install Sample Notebook
 COPY sample_notebook/CavityFlow_with_Navier-Stokes.ipynb /home/$NB_USER/
